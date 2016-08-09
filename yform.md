@@ -55,7 +55,7 @@
 |exception|function|false|function(){}|回调函数，在表单提交成功，但是 status 异常的情况下调用|
 |submitByEnter|boolean|false|false|是否通过点击回车键进行提交|
 |confirm|string|false|''|提交前的确认文案，如果不设置则不进行确认|
-|errorPlacement|string|false|'inline'|(inline\|horizontal) 表单校验的错误提示位置是水平摆放还是换行|
+|errorPlacement|string|false|'inline'|(inline or horizontal) 表单校验的错误提示位置是水平摆放还是换行|
 
 ## Methods
 
