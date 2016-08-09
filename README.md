@@ -1,6 +1,7 @@
-#  ycode-ui-pc-document
-document for ycode ui
+# 介绍
 
- this is a good thing
+PC 端的UI组件。
 
-this is a bad thing
+对组件进行了升级，并且完善组件文档，也就是这个文档。将所有组件都写成了统一的**jQuery**插件的形式。
+
+对yinput组件组进行了大幅修改，yinput 中的将组件和结构分离。
