@@ -47,7 +47,7 @@ $('#date-picker').on('input', function(){
 
 |name|type|required|default|descript|
 |---|---|---|---|----|
-|startDate|string|false|''|设置日期选择范围的起始日期，只有从改日期才可以被选择|
+|startDate|string|false|''|设置日期选择范围的起始日期，只有从该日期才可以被选择|
 
 ###.setEndDate(endDate)
 设置日期选择范围的结束日期，请参考上面的setStartDate()

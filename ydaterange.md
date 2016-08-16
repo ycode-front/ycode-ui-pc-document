@@ -26,7 +26,7 @@
         });
 ```
 
-##options
+##Options
 
 |name|type|required|default|description|
 |:---:|:---:|:---:|:---:|:---|

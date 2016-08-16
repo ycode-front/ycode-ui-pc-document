@@ -19,7 +19,7 @@
 $('#js-textarea').ytextarea({});
 
 ```
-##options
+##Options
 |name|type|required|default|description|
 |:--|:--|:--|:--|:--|
 |autosize|boolean|false|true|设置文本域是否会自动换行

@@ -27,13 +27,20 @@ $('#upload-image').yimageupload({
 
 |name|type|required|default|description|
 |:---|:---|:---:|:---||
-|url|String/Array|yes||表格的数据源,如果为 ``String`` 则判定为数据源的url，如果为 ``Array`` 则作为数据使用|
+|url|String|yes||必须设置，文件上传的url|
 |fileNumber|numbrer|||最大文件的数量|
 |fileNumberNow|number|||当前文件数量|
-|labelLength|number||||
-|widthLimit|number||||
-|heightLimit|number||||
+|widthLimit|number|||上传图片的宽度限制|
+|heightLimit|number|||上传图片的高度限制|
 |disabled|boolean||false||
+|maxSize|||Infinity|设置文件最大大小|
+
+##Events
+|name|target|param|
+|:---|:----|:---|
+|imageupload.start|组件本身|无|
+|imageupload.completed|组件本身|无|
+
 
 
 

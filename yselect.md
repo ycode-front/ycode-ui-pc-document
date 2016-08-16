@@ -36,17 +36,18 @@ $('#js-select')
 ## Options
 |name|type|required|default|description|
 |:---|:---|:---:|:---||
-|dataSource|String/Array|yes||下拉框的数据源,如果为 ``String`` 则判定为数据源的url，如果为 ``Array`` 则作为数据使用|
-|params|Object|no|{}|数据源的参数|
+|dataSource|object|yes||下拉框数据源的相关信息（url、参数等）|
+|dataSource.url|String/Array|yes||下拉框的数据源url,如果为 ``String`` 则判定为数据源的url，如果为 ``Array`` 则作为数据使用|
+|dataSource.params|Object|no|{}|数据源的参数|
 
 ##Method
 
-###setParams
+###setParams({params:1})
 设置参数，使用对象扩展的方式
 
-###setDataSource
+###setDataSource(url)
 设置数据源
 
-###update
+###update()
 更新数据
 
