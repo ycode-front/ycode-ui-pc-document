@@ -34,7 +34,25 @@ $('#date-picker').on('input', function(){
 |endDate|string|false|''|结束日期|
 
 ##Methods
+
+###.getDate(date)
+赶脚没用啊，呵呵哒。。。
+
 ###.setDate(date)
 设置默认日期
 
-什么鬼竟让提交不上去。。。。
+###.setStartDate(startDate)
+设置起始日期
+参数
+
+|name|type|required|default|descript|
+|---|---|---|---|----|
+|startDate|string|false|''|设置日期选择范围的起始日期，只有从改日期才可以被选择|
+
+###.setEndDate(endDate)
+设置日期选择范围的结束日期，请参考上面的setStartDate()
+
+
+相关链接：[bootstrap-datepicker]( http://bootstrap-datepicker.readthedocs.io/en/latest/options.html )
+
+

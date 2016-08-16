@@ -1,0 +1,911 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'D:\\nodejs\\node.exe',
+1 verbose cli   'D:\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'gitbook-cli' ]
+2 info using npm@2.14.12
+3 info using node@v4.2.4
+4 verbose install initial load of C:\Users\admin\AppData\Roaming\npm\package.json
+5 verbose readDependencies loading dependencies from C:\Users\admin\AppData\Roaming\npm\package.json
+6 silly cache add args [ 'gitbook-cli', null ]
+7 verbose cache add spec gitbook-cli
+8 silly cache add parsed spec Result {
+8 silly cache add   raw: 'gitbook-cli',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'gitbook-cli',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: 'latest',
+8 silly cache add   type: 'tag' }
+9 silly addNamed gitbook-cli@latest
+10 verbose addNamed "latest" is being treated as a dist-tag for gitbook-cli
+11 info addNameTag [ 'gitbook-cli', 'latest' ]
+12 silly mapToRegistry name gitbook-cli
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry uri https://registry.npmjs.org/gitbook-cli
+16 verbose addNameTag registry:https://registry.npmjs.org/gitbook-cli not in flight; fetching
+17 verbose request uri https://registry.npmjs.org/gitbook-cli
+18 verbose request no auth needed
+19 info attempt registry request try #1 at 17:12:28
+20 verbose request id 749132ae9f498df4
+21 http request GET https://registry.npmjs.org/gitbook-cli
+22 http 200 https://registry.npmjs.org/gitbook-cli
+23 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+23 verbose headers   etag: '"AGPUZR6PNXT9DHQZ7W9PY7LSU"',
+23 verbose headers   'content-type': 'application/json',
+23 verbose headers   'content-encoding': 'gzip',
+23 verbose headers   'cache-control': 'max-age=300',
+23 verbose headers   'content-length': '4708',
+23 verbose headers   'accept-ranges': 'bytes',
+23 verbose headers   date: 'Mon, 15 Aug 2016 09:18:58 GMT',
+23 verbose headers   via: '1.1 varnish',
+23 verbose headers   age: '0',
+23 verbose headers   connection: 'keep-alive',
+23 verbose headers   'x-served-by': 'cache-lcy1130-LCY',
+23 verbose headers   'x-cache': 'HIT',
+23 verbose headers   'x-cache-hits': '1',
+23 verbose headers   'x-timer': 'S1471252737.788483,VS0,VE716',
+23 verbose headers   vary: 'Accept-Encoding' }
+24 silly get cb [ 200,
+24 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+24 silly get     etag: '"AGPUZR6PNXT9DHQZ7W9PY7LSU"',
+24 silly get     'content-type': 'application/json',
+24 silly get     'content-encoding': 'gzip',
+24 silly get     'cache-control': 'max-age=300',
+24 silly get     'content-length': '4708',
+24 silly get     'accept-ranges': 'bytes',
+24 silly get     date: 'Mon, 15 Aug 2016 09:18:58 GMT',
+24 silly get     via: '1.1 varnish',
+24 silly get     age: '0',
+24 silly get     connection: 'keep-alive',
+24 silly get     'x-served-by': 'cache-lcy1130-LCY',
+24 silly get     'x-cache': 'HIT',
+24 silly get     'x-cache-hits': '1',
+24 silly get     'x-timer': 'S1471252737.788483,VS0,VE716',
+24 silly get     vary: 'Accept-Encoding' } ]
+25 verbose get saving gitbook-cli to C:\Users\admin\AppData\Roaming\npm-cache\registry.npmjs.org\gitbook-cli\.cache.json
+26 silly addNameTag next cb for gitbook-cli with tag latest
+27 silly addNamed gitbook-cli@2.3.0
+28 verbose addNamed "2.3.0" is a plain semver version for gitbook-cli
+29 silly mapToRegistry name gitbook-cli
+30 silly mapToRegistry using default registry
+31 silly mapToRegistry registry https://registry.npmjs.org/
+32 silly mapToRegistry uri https://registry.npmjs.org/gitbook-cli
+33 verbose addRemoteTarball https://registry.npmjs.org/gitbook-cli/-/gitbook-cli-2.3.0.tgz not in flight; adding
+34 verbose addRemoteTarball [ 'https://registry.npmjs.org/gitbook-cli/-/gitbook-cli-2.3.0.tgz',
+34 verbose addRemoteTarball   '01a360de71a48e53277ed2cb1abf6c60a0901576' ]
+35 info retry fetch attempt 1 at 17:19:01
+36 info attempt registry request try #1 at 17:19:01
+37 http fetch GET https://registry.npmjs.org/gitbook-cli/-/gitbook-cli-2.3.0.tgz
+38 http fetch 200 https://registry.npmjs.org/gitbook-cli/-/gitbook-cli-2.3.0.tgz
+39 silly fetchAndShaCheck shasum 01a360de71a48e53277ed2cb1abf6c60a0901576
+40 verbose addTmpTarball C:\Users\admin\AppData\Local\Temp\npm-4932-fe88a50c\registry.npmjs.org\gitbook-cli\-\gitbook-cli-2.3.0.tgz not in flight; adding
+41 verbose addTmpTarball already have metadata; skipping unpack for gitbook-cli@2.3.0
+42 silly cache afterAdd gitbook-cli@2.3.0
+43 verbose afterAdd C:\Users\admin\AppData\Roaming\npm-cache\gitbook-cli\2.3.0\package\package.json not in flight; writing
+44 verbose afterAdd C:\Users\admin\AppData\Roaming\npm-cache\gitbook-cli\2.3.0\package\package.json written
+45 silly install resolved [ { name: 'gitbook-cli',
+45 silly install resolved     version: '2.3.0',
+45 silly install resolved     homepage: 'https://www.gitbook.com',
+45 silly install resolved     description: 'CLI to generate books and documentation using gitbook',
+45 silly install resolved     main: 'bin/gitbook.js',
+45 silly install resolved     dependencies:
+45 silly install resolved      { q: '1.4.1',
+45 silly install resolved        lodash: '4.5.1',
+45 silly install resolved        semver: '5.1.0',
+45 silly install resolved        npmi: '1.0.1',
+45 silly install resolved        tmp: '0.0.28',
+45 silly install resolved        commander: '2.9.0',
+45 silly install resolved        optimist: '0.6.1',
+45 silly install resolved        'fs-extra': '0.26.5',
+45 silly install resolved        'bash-color': '0.0.4',
+45 silly install resolved        npm: '3.7.5',
+45 silly install resolved        'user-home': '2.0.0' },
+45 silly install resolved     devDependencies: { mocha: '2.4.5', should: '8.2.2', gitbook: '2.5.0-beta.1' },
+45 silly install resolved     scripts: { test: 'mocha --reporter spec --recursive --bail' },
+45 silly install resolved     repository:
+45 silly install resolved      { type: 'git',
+45 silly install resolved        url: 'git+https://github.com/GitbookIO/gitbook-cli.git' },
+45 silly install resolved     author: { name: 'FriendCode Inc.', email: 'contact@gitbook.com' },
+45 silly install resolved     license: 'Apache-2.0',
+45 silly install resolved     bugs: { url: 'https://github.com/GitbookIO/gitbook-cli/issues' },
+45 silly install resolved     bin: { gitbook: './bin/gitbook.js' },
+45 silly install resolved     contributors: [ [Object], [Object] ],
+45 silly install resolved     gitHead: 'e940bb338a0cdee2398d3d9c8a7781e772b947e3',
+45 silly install resolved     _id: 'gitbook-cli@2.3.0',
+45 silly install resolved     _shasum: '01a360de71a48e53277ed2cb1abf6c60a0901576',
+45 silly install resolved     _from: 'gitbook-cli@latest',
+45 silly install resolved     _npmVersion: '3.7.5',
+45 silly install resolved     _nodeVersion: '5.1.0',
+45 silly install resolved     _npmUser: { name: 'samypesse', email: 'samypesse@gmail.com' },
+45 silly install resolved     dist:
+45 silly install resolved      { shasum: '01a360de71a48e53277ed2cb1abf6c60a0901576',
+45 silly install resolved        tarball: 'https://registry.npmjs.org/gitbook-cli/-/gitbook-cli-2.3.0.tgz' },
+45 silly install resolved     maintainers: [ [Object] ],
+45 silly install resolved     _npmOperationalInternal:
+45 silly install resolved      { host: 'packages-12-west.internal.npmjs.com',
+45 silly install resolved        tmp: 'tmp/gitbook-cli-2.3.0.tgz_1465926440160_0.3532504632603377' },
+45 silly install resolved     directories: {},
+45 silly install resolved     _resolved: 'https://registry.npmjs.org/gitbook-cli/-/gitbook-cli-2.3.0.tgz' } ]
+46 info install gitbook-cli@2.3.0 into C:\Users\admin\AppData\Roaming\npm
+47 info installOne gitbook-cli@2.3.0
+48 verbose installOne of gitbook-cli to C:\Users\admin\AppData\Roaming\npm not in flight; installing
+49 verbose lock using C:\Users\admin\AppData\Roaming\npm-cache\_locks\gitbook-cli-ec4c6da7bf6c79c4.lock for C:\Users\admin\AppData\Roaming\npm\node_modules\gitbook-cli
+50 silly install write writing gitbook-cli 2.3.0 to C:\Users\admin\AppData\Roaming\npm\node_modules\gitbook-cli
+51 verbose unbuild node_modules\gitbook-cli
+52 silly gentlyRm C:\Users\admin\AppData\Roaming\npm\node_modules\gitbook-cli is being purged from base C:\Users\admin\AppData\Roaming\npm
+53 verbose gentlyRm don't care about contents; nuking C:\Users\admin\AppData\Roaming\npm\node_modules\gitbook-cli
+54 verbose tar unpack C:\Users\admin\AppData\Roaming\npm-cache\gitbook-cli\2.3.0\package.tgz
+55 verbose tar unpacking to C:\Users\admin\AppData\Roaming\npm\node_modules\gitbook-cli
+56 silly gentlyRm C:\Users\admin\AppData\Roaming\npm\node_modules\gitbook-cli is being purged
+57 verbose gentlyRm don't care about contents; nuking C:\Users\admin\AppData\Roaming\npm\node_modules\gitbook-cli
+58 silly gunzTarPerm modes [ '777', '666' ]
+59 silly gunzTarPerm extractEntry package.json
+60 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+61 silly gunzTarPerm extractEntry .npmignore
+62 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+63 silly gunzTarPerm extractEntry README.md
+64 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+65 silly gunzTarPerm extractEntry appveyor.yml
+66 silly gunzTarPerm modified mode [ 'appveyor.yml', 420, 438 ]
+67 silly gunzTarPerm extractEntry .travis.yml
+68 silly gunzTarPerm modified mode [ '.travis.yml', 420, 438 ]
+69 silly gunzTarPerm extractEntry .eslintrc
+70 silly gunzTarPerm modified mode [ '.eslintrc', 420, 438 ]
+71 silly gunzTarPerm extractEntry bin/gitbook.js
+72 silly gunzTarPerm modified mode [ 'bin/gitbook.js', 493, 511 ]
+73 silly gunzTarPerm extractEntry lib/commands.js
+74 silly gunzTarPerm modified mode [ 'lib/commands.js', 420, 438 ]
+75 silly gunzTarPerm extractEntry lib/config.js
+76 silly gunzTarPerm modified mode [ 'lib/config.js', 420, 438 ]
+77 silly gunzTarPerm extractEntry lib/index.js
+78 silly gunzTarPerm modified mode [ 'lib/index.js', 420, 438 ]
+79 silly gunzTarPerm extractEntry lib/local.js
+80 silly gunzTarPerm modified mode [ 'lib/local.js', 420, 438 ]
+81 silly gunzTarPerm extractEntry lib/registry.js
+82 silly gunzTarPerm modified mode [ 'lib/registry.js', 420, 438 ]
+83 silly gunzTarPerm extractEntry lib/tags.js
+84 silly gunzTarPerm modified mode [ 'lib/tags.js', 420, 438 ]
+85 silly gunzTarPerm extractEntry test/_helper.js
+86 silly gunzTarPerm modified mode [ 'test/_helper.js', 420, 438 ]
+87 silly gunzTarPerm extractEntry test/tags.js
+88 silly gunzTarPerm modified mode [ 'test/tags.js', 420, 438 ]
+89 silly gunzTarPerm extractEntry test/versions.js
+90 silly gunzTarPerm modified mode [ 'test/versions.js', 420, 438 ]
+91 silly gunzTarPerm extractEntry test/fixtures/book1/book.json
+92 silly gunzTarPerm modified mode [ 'test/fixtures/book1/book.json', 420, 438 ]
+93 verbose write writing to C:\Users\admin\AppData\Roaming\npm\node_modules\gitbook-cli\package.json
+94 info preinstall gitbook-cli@2.3.0
+95 verbose readDependencies loading dependencies from C:\Users\admin\AppData\Roaming\npm\node_modules\gitbook-cli\package.json
+96 silly prepareForInstallMany adding q@1.4.1 from gitbook-cli dependencies
+97 silly prepareForInstallMany adding lodash@4.5.1 from gitbook-cli dependencies
+98 silly prepareForInstallMany adding semver@5.1.0 from gitbook-cli dependencies
+99 silly prepareForInstallMany adding npmi@1.0.1 from gitbook-cli dependencies
+100 silly prepareForInstallMany adding tmp@0.0.28 from gitbook-cli dependencies
+101 silly prepareForInstallMany adding commander@2.9.0 from gitbook-cli dependencies
+102 silly prepareForInstallMany adding optimist@0.6.1 from gitbook-cli dependencies
+103 silly prepareForInstallMany adding fs-extra@0.26.5 from gitbook-cli dependencies
+104 silly prepareForInstallMany adding bash-color@0.0.4 from gitbook-cli dependencies
+105 silly prepareForInstallMany adding npm@3.7.5 from gitbook-cli dependencies
+106 silly prepareForInstallMany adding user-home@2.0.0 from gitbook-cli dependencies
+107 verbose readDependencies loading dependencies from C:\Users\admin\AppData\Roaming\npm\node_modules\gitbook-cli\package.json
+108 silly cache add args [ 'q@1.4.1', null ]
+109 verbose cache add spec q@1.4.1
+110 silly cache add args [ 'lodash@4.5.1', null ]
+111 verbose cache add spec lodash@4.5.1
+112 silly cache add parsed spec Result {
+112 silly cache add   raw: 'q@1.4.1',
+112 silly cache add   scope: null,
+112 silly cache add   name: 'q',
+112 silly cache add   rawSpec: '1.4.1',
+112 silly cache add   spec: '1.4.1',
+112 silly cache add   type: 'version' }
+113 silly addNamed q@1.4.1
+114 verbose addNamed "1.4.1" is a plain semver version for q
+115 silly mapToRegistry name q
+116 silly mapToRegistry using default registry
+117 silly mapToRegistry registry https://registry.npmjs.org/
+118 silly mapToRegistry uri https://registry.npmjs.org/q
+119 verbose addNameVersion registry:https://registry.npmjs.org/q not in flight; fetching
+120 silly cache add parsed spec Result {
+120 silly cache add   raw: 'lodash@4.5.1',
+120 silly cache add   scope: null,
+120 silly cache add   name: 'lodash',
+120 silly cache add   rawSpec: '4.5.1',
+120 silly cache add   spec: '4.5.1',
+120 silly cache add   type: 'version' }
+121 silly addNamed lodash@4.5.1
+122 verbose addNamed "4.5.1" is a plain semver version for lodash
+123 silly mapToRegistry name lodash
+124 silly mapToRegistry using default registry
+125 silly mapToRegistry registry https://registry.npmjs.org/
+126 silly mapToRegistry uri https://registry.npmjs.org/lodash
+127 verbose addNameVersion registry:https://registry.npmjs.org/lodash not in flight; fetching
+128 silly cache add args [ 'semver@5.1.0', null ]
+129 verbose cache add spec semver@5.1.0
+130 silly cache add parsed spec Result {
+130 silly cache add   raw: 'semver@5.1.0',
+130 silly cache add   scope: null,
+130 silly cache add   name: 'semver',
+130 silly cache add   rawSpec: '5.1.0',
+130 silly cache add   spec: '5.1.0',
+130 silly cache add   type: 'version' }
+131 silly addNamed semver@5.1.0
+132 verbose addNamed "5.1.0" is a plain semver version for semver
+133 silly mapToRegistry name semver
+134 silly mapToRegistry using default registry
+135 silly mapToRegistry registry https://registry.npmjs.org/
+136 silly mapToRegistry uri https://registry.npmjs.org/semver
+137 verbose addNameVersion registry:https://registry.npmjs.org/semver not in flight; fetching
+138 silly cache add args [ 'npmi@1.0.1', null ]
+139 verbose cache add spec npmi@1.0.1
+140 silly cache add parsed spec Result {
+140 silly cache add   raw: 'npmi@1.0.1',
+140 silly cache add   scope: null,
+140 silly cache add   name: 'npmi',
+140 silly cache add   rawSpec: '1.0.1',
+140 silly cache add   spec: '1.0.1',
+140 silly cache add   type: 'version' }
+141 silly addNamed npmi@1.0.1
+142 verbose addNamed "1.0.1" is a plain semver version for npmi
+143 silly mapToRegistry name npmi
+144 silly mapToRegistry using default registry
+145 silly mapToRegistry registry https://registry.npmjs.org/
+146 silly mapToRegistry uri https://registry.npmjs.org/npmi
+147 verbose addNameVersion registry:https://registry.npmjs.org/npmi not in flight; fetching
+148 silly cache add args [ 'tmp@0.0.28', null ]
+149 verbose cache add spec tmp@0.0.28
+150 silly cache add parsed spec Result {
+150 silly cache add   raw: 'tmp@0.0.28',
+150 silly cache add   scope: null,
+150 silly cache add   name: 'tmp',
+150 silly cache add   rawSpec: '0.0.28',
+150 silly cache add   spec: '0.0.28',
+150 silly cache add   type: 'version' }
+151 silly addNamed tmp@0.0.28
+152 verbose addNamed "0.0.28" is a plain semver version for tmp
+153 silly mapToRegistry name tmp
+154 silly mapToRegistry using default registry
+155 silly mapToRegistry registry https://registry.npmjs.org/
+156 silly mapToRegistry uri https://registry.npmjs.org/tmp
+157 verbose addNameVersion registry:https://registry.npmjs.org/tmp not in flight; fetching
+158 silly cache add args [ 'commander@2.9.0', null ]
+159 verbose cache add spec commander@2.9.0
+160 silly cache add parsed spec Result {
+160 silly cache add   raw: 'commander@2.9.0',
+160 silly cache add   scope: null,
+160 silly cache add   name: 'commander',
+160 silly cache add   rawSpec: '2.9.0',
+160 silly cache add   spec: '2.9.0',
+160 silly cache add   type: 'version' }
+161 silly addNamed commander@2.9.0
+162 verbose addNamed "2.9.0" is a plain semver version for commander
+163 silly mapToRegistry name commander
+164 silly mapToRegistry using default registry
+165 silly mapToRegistry registry https://registry.npmjs.org/
+166 silly mapToRegistry uri https://registry.npmjs.org/commander
+167 verbose addNameVersion registry:https://registry.npmjs.org/commander not in flight; fetching
+168 silly cache add args [ 'optimist@0.6.1', null ]
+169 verbose cache add spec optimist@0.6.1
+170 silly cache add parsed spec Result {
+170 silly cache add   raw: 'optimist@0.6.1',
+170 silly cache add   scope: null,
+170 silly cache add   name: 'optimist',
+170 silly cache add   rawSpec: '0.6.1',
+170 silly cache add   spec: '0.6.1',
+170 silly cache add   type: 'version' }
+171 silly addNamed optimist@0.6.1
+172 verbose addNamed "0.6.1" is a plain semver version for optimist
+173 silly mapToRegistry name optimist
+174 silly mapToRegistry using default registry
+175 silly mapToRegistry registry https://registry.npmjs.org/
+176 silly mapToRegistry uri https://registry.npmjs.org/optimist
+177 verbose addNameVersion registry:https://registry.npmjs.org/optimist not in flight; fetching
+178 silly cache add args [ 'fs-extra@0.26.5', null ]
+179 verbose cache add spec fs-extra@0.26.5
+180 silly cache add parsed spec Result {
+180 silly cache add   raw: 'fs-extra@0.26.5',
+180 silly cache add   scope: null,
+180 silly cache add   name: 'fs-extra',
+180 silly cache add   rawSpec: '0.26.5',
+180 silly cache add   spec: '0.26.5',
+180 silly cache add   type: 'version' }
+181 silly addNamed fs-extra@0.26.5
+182 verbose addNamed "0.26.5" is a plain semver version for fs-extra
+183 silly mapToRegistry name fs-extra
+184 silly mapToRegistry using default registry
+185 silly mapToRegistry registry https://registry.npmjs.org/
+186 silly mapToRegistry uri https://registry.npmjs.org/fs-extra
+187 verbose addNameVersion registry:https://registry.npmjs.org/fs-extra not in flight; fetching
+188 silly cache add args [ 'bash-color@0.0.4', null ]
+189 verbose cache add spec bash-color@0.0.4
+190 silly cache add parsed spec Result {
+190 silly cache add   raw: 'bash-color@0.0.4',
+190 silly cache add   scope: null,
+190 silly cache add   name: 'bash-color',
+190 silly cache add   rawSpec: '0.0.4',
+190 silly cache add   spec: '0.0.4',
+190 silly cache add   type: 'version' }
+191 silly addNamed bash-color@0.0.4
+192 verbose addNamed "0.0.4" is a plain semver version for bash-color
+193 silly mapToRegistry name bash-color
+194 silly mapToRegistry using default registry
+195 silly mapToRegistry registry https://registry.npmjs.org/
+196 silly mapToRegistry uri https://registry.npmjs.org/bash-color
+197 verbose addNameVersion registry:https://registry.npmjs.org/bash-color not in flight; fetching
+198 silly cache add args [ 'npm@3.7.5', null ]
+199 verbose cache add spec npm@3.7.5
+200 silly cache add parsed spec Result {
+200 silly cache add   raw: 'npm@3.7.5',
+200 silly cache add   scope: null,
+200 silly cache add   name: 'npm',
+200 silly cache add   rawSpec: '3.7.5',
+200 silly cache add   spec: '3.7.5',
+200 silly cache add   type: 'version' }
+201 silly addNamed npm@3.7.5
+202 verbose addNamed "3.7.5" is a plain semver version for npm
+203 silly mapToRegistry name npm
+204 silly mapToRegistry using default registry
+205 silly mapToRegistry registry https://registry.npmjs.org/
+206 silly mapToRegistry uri https://registry.npmjs.org/npm
+207 verbose addNameVersion registry:https://registry.npmjs.org/npm not in flight; fetching
+208 silly cache add args [ 'user-home@2.0.0', null ]
+209 verbose cache add spec user-home@2.0.0
+210 silly cache add parsed spec Result {
+210 silly cache add   raw: 'user-home@2.0.0',
+210 silly cache add   scope: null,
+210 silly cache add   name: 'user-home',
+210 silly cache add   rawSpec: '2.0.0',
+210 silly cache add   spec: '2.0.0',
+210 silly cache add   type: 'version' }
+211 silly addNamed user-home@2.0.0
+212 verbose addNamed "2.0.0" is a plain semver version for user-home
+213 silly mapToRegistry name user-home
+214 silly mapToRegistry using default registry
+215 silly mapToRegistry registry https://registry.npmjs.org/
+216 silly mapToRegistry uri https://registry.npmjs.org/user-home
+217 verbose addNameVersion registry:https://registry.npmjs.org/user-home not in flight; fetching
+218 verbose request uri https://registry.npmjs.org/q
+219 verbose request no auth needed
+220 info attempt registry request try #1 at 17:19:03
+221 http request GET https://registry.npmjs.org/q
+222 verbose request uri https://registry.npmjs.org/lodash
+223 verbose request no auth needed
+224 info attempt registry request try #1 at 17:19:03
+225 http request GET https://registry.npmjs.org/lodash
+226 verbose request uri https://registry.npmjs.org/semver
+227 verbose request no auth needed
+228 info attempt registry request try #1 at 17:19:03
+229 http request GET https://registry.npmjs.org/semver
+230 verbose request uri https://registry.npmjs.org/npmi
+231 verbose request no auth needed
+232 info attempt registry request try #1 at 17:19:03
+233 http request GET https://registry.npmjs.org/npmi
+234 verbose request uri https://registry.npmjs.org/tmp
+235 verbose request no auth needed
+236 info attempt registry request try #1 at 17:19:03
+237 http request GET https://registry.npmjs.org/tmp
+238 verbose request uri https://registry.npmjs.org/commander
+239 verbose request no auth needed
+240 info attempt registry request try #1 at 17:19:03
+241 http request GET https://registry.npmjs.org/commander
+242 verbose request uri https://registry.npmjs.org/optimist
+243 verbose request no auth needed
+244 info attempt registry request try #1 at 17:19:03
+245 http request GET https://registry.npmjs.org/optimist
+246 verbose request uri https://registry.npmjs.org/fs-extra
+247 verbose request no auth needed
+248 info attempt registry request try #1 at 17:19:03
+249 http request GET https://registry.npmjs.org/fs-extra
+250 verbose request uri https://registry.npmjs.org/bash-color
+251 verbose request no auth needed
+252 info attempt registry request try #1 at 17:19:03
+253 http request GET https://registry.npmjs.org/bash-color
+254 verbose request uri https://registry.npmjs.org/npm
+255 verbose request no auth needed
+256 info attempt registry request try #1 at 17:19:03
+257 http request GET https://registry.npmjs.org/npm
+258 verbose request uri https://registry.npmjs.org/user-home
+259 verbose request no auth needed
+260 info attempt registry request try #1 at 17:19:03
+261 http request GET https://registry.npmjs.org/user-home
+262 http 200 https://registry.npmjs.org/npmi
+263 verbose headers { server: 'CouchDB/1.6.1 (Erlang OTP/R16B03)',
+263 verbose headers   etag: '"5U91PTEAM8CPBA6DJXA52J2BV"',
+263 verbose headers   'content-type': 'application/json',
+263 verbose headers   'content-encoding': 'gzip',
+263 verbose headers   'cache-control': 'max-age=300',
+263 verbose headers   'content-length': '4038',
+263 verbose headers   'accept-ranges': 'bytes',
+263 verbose headers   date: 'Mon, 15 Aug 2016 09:19:07 GMT',
+263 verbose headers   via: '1.1 varnish',
+263 verbose headers   age: '202',
+263 verbose headers   connection: 'keep-alive',
+263 verbose headers   'x-served-by': 'cache-lcy1126-LCY',
+263 verbose headers   'x-cache': 'HIT',
+263 verbose headers   'x-cache-hits': '2',
+263 verbose headers   'x-timer': 'S1471252747.992241,VS0,VE0',
+263 verbose headers   vary: 'Accept-Encoding' }
+264 silly get cb [ 200,
+264 silly get   { server: 'CouchDB/1.6.1 (Erlang OTP/R16B03)',
+264 silly get     etag: '"5U91PTEAM8CPBA6DJXA52J2BV"',
+264 silly get     'content-type': 'application/json',
+264 silly get     'content-encoding': 'gzip',
+264 silly get     'cache-control': 'max-age=300',
+264 silly get     'content-length': '4038',
+264 silly get     'accept-ranges': 'bytes',
+264 silly get     date: 'Mon, 15 Aug 2016 09:19:07 GMT',
+264 silly get     via: '1.1 varnish',
+264 silly get     age: '202',
+264 silly get     connection: 'keep-alive',
+264 silly get     'x-served-by': 'cache-lcy1126-LCY',
+264 silly get     'x-cache': 'HIT',
+264 silly get     'x-cache-hits': '2',
+264 silly get     'x-timer': 'S1471252747.992241,VS0,VE0',
+264 silly get     vary: 'Accept-Encoding' } ]
+265 verbose get saving npmi to C:\Users\admin\AppData\Roaming\npm-cache\registry.npmjs.org\npmi\.cache.json
+266 silly mapToRegistry name npmi
+267 silly mapToRegistry using default registry
+268 silly mapToRegistry registry https://registry.npmjs.org/
+269 silly mapToRegistry uri https://registry.npmjs.org/npmi
+270 verbose addRemoteTarball https://registry.npmjs.org/npmi/-/npmi-1.0.1.tgz not in flight; adding
+271 verbose addRemoteTarball [ 'https://registry.npmjs.org/npmi/-/npmi-1.0.1.tgz',
+271 verbose addRemoteTarball   '15d769273547545e6809dcf0ce18aed48b0290e2' ]
+272 info retry fetch attempt 1 at 17:19:04
+273 info attempt registry request try #1 at 17:19:04
+274 http fetch GET https://registry.npmjs.org/npmi/-/npmi-1.0.1.tgz
+275 http 200 https://registry.npmjs.org/bash-color
+276 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+276 verbose headers   etag: '"28WVRD7B9HEEESU0I6KXW80LY"',
+276 verbose headers   'content-type': 'application/json',
+276 verbose headers   'content-encoding': 'gzip',
+276 verbose headers   'cache-control': 'max-age=300',
+276 verbose headers   'content-length': '2483',
+276 verbose headers   'accept-ranges': 'bytes',
+276 verbose headers   date: 'Mon, 15 Aug 2016 09:19:08 GMT',
+276 verbose headers   via: '1.1 varnish',
+276 verbose headers   age: '212',
+276 verbose headers   connection: 'keep-alive',
+276 verbose headers   'x-served-by': 'cache-lcy1128-LCY',
+276 verbose headers   'x-cache': 'HIT',
+276 verbose headers   'x-cache-hits': '1',
+276 verbose headers   'x-timer': 'S1471252748.161795,VS0,VE0',
+276 verbose headers   vary: 'Accept-Encoding' }
+277 silly get cb [ 200,
+277 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+277 silly get     etag: '"28WVRD7B9HEEESU0I6KXW80LY"',
+277 silly get     'content-type': 'application/json',
+277 silly get     'content-encoding': 'gzip',
+277 silly get     'cache-control': 'max-age=300',
+277 silly get     'content-length': '2483',
+277 silly get     'accept-ranges': 'bytes',
+277 silly get     date: 'Mon, 15 Aug 2016 09:19:08 GMT',
+277 silly get     via: '1.1 varnish',
+277 silly get     age: '212',
+277 silly get     connection: 'keep-alive',
+277 silly get     'x-served-by': 'cache-lcy1128-LCY',
+277 silly get     'x-cache': 'HIT',
+277 silly get     'x-cache-hits': '1',
+277 silly get     'x-timer': 'S1471252748.161795,VS0,VE0',
+277 silly get     vary: 'Accept-Encoding' } ]
+278 verbose get saving bash-color to C:\Users\admin\AppData\Roaming\npm-cache\registry.npmjs.org\bash-color\.cache.json
+279 http 200 https://registry.npmjs.org/tmp
+280 verbose headers { server: 'CouchDB/1.6.1 (Erlang OTP/R16B03)',
+280 verbose headers   etag: '"BK2NJNHAR4CI21S98L9XHNR8G"',
+280 verbose headers   'content-type': 'application/json',
+280 verbose headers   'content-encoding': 'gzip',
+280 verbose headers   'cache-control': 'max-age=300',
+280 verbose headers   'content-length': '6196',
+280 verbose headers   'accept-ranges': 'bytes',
+280 verbose headers   date: 'Mon, 15 Aug 2016 09:19:08 GMT',
+280 verbose headers   via: '1.1 varnish',
+280 verbose headers   age: '41',
+280 verbose headers   connection: 'keep-alive',
+280 verbose headers   'x-served-by': 'cache-lcy1132-LCY',
+280 verbose headers   'x-cache': 'HIT',
+280 verbose headers   'x-cache-hits': '1',
+280 verbose headers   'x-timer': 'S1471252748.172197,VS0,VE0',
+280 verbose headers   vary: 'Accept-Encoding' }
+281 silly get cb [ 200,
+281 silly get   { server: 'CouchDB/1.6.1 (Erlang OTP/R16B03)',
+281 silly get     etag: '"BK2NJNHAR4CI21S98L9XHNR8G"',
+281 silly get     'content-type': 'application/json',
+281 silly get     'content-encoding': 'gzip',
+281 silly get     'cache-control': 'max-age=300',
+281 silly get     'content-length': '6196',
+281 silly get     'accept-ranges': 'bytes',
+281 silly get     date: 'Mon, 15 Aug 2016 09:19:08 GMT',
+281 silly get     via: '1.1 varnish',
+281 silly get     age: '41',
+281 silly get     connection: 'keep-alive',
+281 silly get     'x-served-by': 'cache-lcy1132-LCY',
+281 silly get     'x-cache': 'HIT',
+281 silly get     'x-cache-hits': '1',
+281 silly get     'x-timer': 'S1471252748.172197,VS0,VE0',
+281 silly get     vary: 'Accept-Encoding' } ]
+282 verbose get saving tmp to C:\Users\admin\AppData\Roaming\npm-cache\registry.npmjs.org\tmp\.cache.json
+283 silly mapToRegistry name bash-color
+284 silly mapToRegistry using default registry
+285 silly mapToRegistry registry https://registry.npmjs.org/
+286 silly mapToRegistry uri https://registry.npmjs.org/bash-color
+287 verbose addRemoteTarball https://registry.npmjs.org/bash-color/-/bash-color-0.0.4.tgz not in flight; adding
+288 verbose addRemoteTarball [ 'https://registry.npmjs.org/bash-color/-/bash-color-0.0.4.tgz',
+288 verbose addRemoteTarball   'e9be8ce33540cada4881768c59bd63865736e913' ]
+289 http 200 https://registry.npmjs.org/commander
+290 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+290 verbose headers   etag: '"5V6WY7T5GBFKCTTDWJ899BWEK"',
+290 verbose headers   'content-type': 'application/json',
+290 verbose headers   'content-encoding': 'gzip',
+290 verbose headers   'cache-control': 'max-age=300',
+290 verbose headers   'content-length': '13094',
+290 verbose headers   'accept-ranges': 'bytes',
+290 verbose headers   date: 'Mon, 15 Aug 2016 09:19:08 GMT',
+290 verbose headers   via: '1.1 varnish',
+290 verbose headers   age: '56',
+290 verbose headers   connection: 'keep-alive',
+290 verbose headers   'x-served-by': 'cache-lcy1132-LCY',
+290 verbose headers   'x-cache': 'HIT',
+290 verbose headers   'x-cache-hits': '10',
+290 verbose headers   'x-timer': 'S1471252748.172734,VS0,VE0',
+290 verbose headers   vary: 'Accept-Encoding' }
+291 silly get cb [ 200,
+291 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+291 silly get     etag: '"5V6WY7T5GBFKCTTDWJ899BWEK"',
+291 silly get     'content-type': 'application/json',
+291 silly get     'content-encoding': 'gzip',
+291 silly get     'cache-control': 'max-age=300',
+291 silly get     'content-length': '13094',
+291 silly get     'accept-ranges': 'bytes',
+291 silly get     date: 'Mon, 15 Aug 2016 09:19:08 GMT',
+291 silly get     via: '1.1 varnish',
+291 silly get     age: '56',
+291 silly get     connection: 'keep-alive',
+291 silly get     'x-served-by': 'cache-lcy1132-LCY',
+291 silly get     'x-cache': 'HIT',
+291 silly get     'x-cache-hits': '10',
+291 silly get     'x-timer': 'S1471252748.172734,VS0,VE0',
+291 silly get     vary: 'Accept-Encoding' } ]
+292 verbose get saving commander to C:\Users\admin\AppData\Roaming\npm-cache\registry.npmjs.org\commander\.cache.json
+293 info retry fetch attempt 1 at 17:19:04
+294 info attempt registry request try #1 at 17:19:04
+295 http fetch GET https://registry.npmjs.org/bash-color/-/bash-color-0.0.4.tgz
+296 http 200 https://registry.npmjs.org/user-home
+297 verbose headers { server: 'CouchDB/1.6.1 (Erlang OTP/R16B03)',
+297 verbose headers   etag: '"ERWA9UEHRU56DGWBRBL44A19B"',
+297 verbose headers   'content-type': 'application/json',
+297 verbose headers   'content-encoding': 'gzip',
+297 verbose headers   'cache-control': 'max-age=300',
+297 verbose headers   'content-length': '1660',
+297 verbose headers   'accept-ranges': 'bytes',
+297 verbose headers   date: 'Mon, 15 Aug 2016 09:19:08 GMT',
+297 verbose headers   via: '1.1 varnish',
+297 verbose headers   age: '141',
+297 verbose headers   connection: 'keep-alive',
+297 verbose headers   'x-served-by': 'cache-lcy1120-LCY',
+297 verbose headers   'x-cache': 'HIT',
+297 verbose headers   'x-cache-hits': '11',
+297 verbose headers   'x-timer': 'S1471252748.178673,VS0,VE0',
+297 verbose headers   vary: 'Accept-Encoding' }
+298 silly get cb [ 200,
+298 silly get   { server: 'CouchDB/1.6.1 (Erlang OTP/R16B03)',
+298 silly get     etag: '"ERWA9UEHRU56DGWBRBL44A19B"',
+298 silly get     'content-type': 'application/json',
+298 silly get     'content-encoding': 'gzip',
+298 silly get     'cache-control': 'max-age=300',
+298 silly get     'content-length': '1660',
+298 silly get     'accept-ranges': 'bytes',
+298 silly get     date: 'Mon, 15 Aug 2016 09:19:08 GMT',
+298 silly get     via: '1.1 varnish',
+298 silly get     age: '141',
+298 silly get     connection: 'keep-alive',
+298 silly get     'x-served-by': 'cache-lcy1120-LCY',
+298 silly get     'x-cache': 'HIT',
+298 silly get     'x-cache-hits': '11',
+298 silly get     'x-timer': 'S1471252748.178673,VS0,VE0',
+298 silly get     vary: 'Accept-Encoding' } ]
+299 verbose get saving user-home to C:\Users\admin\AppData\Roaming\npm-cache\registry.npmjs.org\user-home\.cache.json
+300 silly mapToRegistry name tmp
+301 silly mapToRegistry using default registry
+302 silly mapToRegistry registry https://registry.npmjs.org/
+303 silly mapToRegistry uri https://registry.npmjs.org/tmp
+304 verbose addRemoteTarball https://registry.npmjs.org/tmp/-/tmp-0.0.28.tgz not in flight; adding
+305 verbose addRemoteTarball [ 'https://registry.npmjs.org/tmp/-/tmp-0.0.28.tgz',
+305 verbose addRemoteTarball   '172735b7f614ea7af39664fa84cf0de4e515d120' ]
+306 http 200 https://registry.npmjs.org/optimist
+307 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+307 verbose headers   etag: '"7IHS3R37PCSG7HB9VTD0CBAIG"',
+307 verbose headers   'content-type': 'application/json',
+307 verbose headers   'content-encoding': 'gzip',
+307 verbose headers   'cache-control': 'max-age=300',
+307 verbose headers   'content-length': '9279',
+307 verbose headers   'accept-ranges': 'bytes',
+307 verbose headers   date: 'Mon, 15 Aug 2016 09:19:08 GMT',
+307 verbose headers   via: '1.1 varnish',
+307 verbose headers   age: '191',
+307 verbose headers   connection: 'keep-alive',
+307 verbose headers   'x-served-by': 'cache-lcy1131-LCY',
+307 verbose headers   'x-cache': 'HIT',
+307 verbose headers   'x-cache-hits': '13',
+307 verbose headers   'x-timer': 'S1471252748.172117,VS0,VE0',
+307 verbose headers   vary: 'Accept-Encoding' }
+308 silly get cb [ 200,
+308 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+308 silly get     etag: '"7IHS3R37PCSG7HB9VTD0CBAIG"',
+308 silly get     'content-type': 'application/json',
+308 silly get     'content-encoding': 'gzip',
+308 silly get     'cache-control': 'max-age=300',
+308 silly get     'content-length': '9279',
+308 silly get     'accept-ranges': 'bytes',
+308 silly get     date: 'Mon, 15 Aug 2016 09:19:08 GMT',
+308 silly get     via: '1.1 varnish',
+308 silly get     age: '191',
+308 silly get     connection: 'keep-alive',
+308 silly get     'x-served-by': 'cache-lcy1131-LCY',
+308 silly get     'x-cache': 'HIT',
+308 silly get     'x-cache-hits': '13',
+308 silly get     'x-timer': 'S1471252748.172117,VS0,VE0',
+308 silly get     vary: 'Accept-Encoding' } ]
+309 verbose get saving optimist to C:\Users\admin\AppData\Roaming\npm-cache\registry.npmjs.org\optimist\.cache.json
+310 info retry fetch attempt 1 at 17:19:04
+311 info attempt registry request try #1 at 17:19:04
+312 http fetch GET https://registry.npmjs.org/tmp/-/tmp-0.0.28.tgz
+313 silly mapToRegistry name commander
+314 silly mapToRegistry using default registry
+315 silly mapToRegistry registry https://registry.npmjs.org/
+316 silly mapToRegistry uri https://registry.npmjs.org/commander
+317 verbose addRemoteTarball https://registry.npmjs.org/commander/-/commander-2.9.0.tgz not in flight; adding
+318 verbose addRemoteTarball [ 'https://registry.npmjs.org/commander/-/commander-2.9.0.tgz',
+318 verbose addRemoteTarball   '9c99094176e12240cb22d6c5146098400fe0f7d4' ]
+319 silly mapToRegistry name user-home
+320 silly mapToRegistry using default registry
+321 silly mapToRegistry registry https://registry.npmjs.org/
+322 silly mapToRegistry uri https://registry.npmjs.org/user-home
+323 verbose addRemoteTarball https://registry.npmjs.org/user-home/-/user-home-2.0.0.tgz not in flight; adding
+324 verbose addRemoteTarball [ 'https://registry.npmjs.org/user-home/-/user-home-2.0.0.tgz',
+324 verbose addRemoteTarball   '9c70bfd8169bc1dcbf48604e0f04b8b49cde9e9f' ]
+325 info retry fetch attempt 1 at 17:19:04
+326 info attempt registry request try #1 at 17:19:04
+327 http fetch GET https://registry.npmjs.org/commander/-/commander-2.9.0.tgz
+328 silly mapToRegistry name optimist
+329 silly mapToRegistry using default registry
+330 silly mapToRegistry registry https://registry.npmjs.org/
+331 silly mapToRegistry uri https://registry.npmjs.org/optimist
+332 verbose addRemoteTarball https://registry.npmjs.org/optimist/-/optimist-0.6.1.tgz not in flight; adding
+333 verbose addRemoteTarball [ 'https://registry.npmjs.org/optimist/-/optimist-0.6.1.tgz',
+333 verbose addRemoteTarball   'da3ea74686fa21a19a111c326e90eb15a0196686' ]
+334 info retry fetch attempt 1 at 17:19:04
+335 info attempt registry request try #1 at 17:19:04
+336 http fetch GET https://registry.npmjs.org/user-home/-/user-home-2.0.0.tgz
+337 info retry fetch attempt 1 at 17:19:04
+338 info attempt registry request try #1 at 17:19:04
+339 http fetch GET https://registry.npmjs.org/optimist/-/optimist-0.6.1.tgz
+340 http 200 https://registry.npmjs.org/semver
+341 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+341 verbose headers   etag: '"ALLV2L3CYFFJWTWR3Q5UQA3DG"',
+341 verbose headers   'content-type': 'application/json',
+341 verbose headers   'content-encoding': 'gzip',
+341 verbose headers   'cache-control': 'max-age=300',
+341 verbose headers   'content-length': '13734',
+341 verbose headers   'accept-ranges': 'bytes',
+341 verbose headers   date: 'Mon, 15 Aug 2016 09:19:08 GMT',
+341 verbose headers   via: '1.1 varnish',
+341 verbose headers   age: '84',
+341 verbose headers   connection: 'keep-alive',
+341 verbose headers   'x-served-by': 'cache-lcy1120-LCY',
+341 verbose headers   'x-cache': 'HIT',
+341 verbose headers   'x-cache-hits': '11',
+341 verbose headers   'x-timer': 'S1471252748.178601,VS0,VE0',
+341 verbose headers   vary: 'Accept-Encoding' }
+342 silly get cb [ 200,
+342 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+342 silly get     etag: '"ALLV2L3CYFFJWTWR3Q5UQA3DG"',
+342 silly get     'content-type': 'application/json',
+342 silly get     'content-encoding': 'gzip',
+342 silly get     'cache-control': 'max-age=300',
+342 silly get     'content-length': '13734',
+342 silly get     'accept-ranges': 'bytes',
+342 silly get     date: 'Mon, 15 Aug 2016 09:19:08 GMT',
+342 silly get     via: '1.1 varnish',
+342 silly get     age: '84',
+342 silly get     connection: 'keep-alive',
+342 silly get     'x-served-by': 'cache-lcy1120-LCY',
+342 silly get     'x-cache': 'HIT',
+342 silly get     'x-cache-hits': '11',
+342 silly get     'x-timer': 'S1471252748.178601,VS0,VE0',
+342 silly get     vary: 'Accept-Encoding' } ]
+343 verbose get saving semver to C:\Users\admin\AppData\Roaming\npm-cache\registry.npmjs.org\semver\.cache.json
+344 silly mapToRegistry name semver
+345 silly mapToRegistry using default registry
+346 silly mapToRegistry registry https://registry.npmjs.org/
+347 silly mapToRegistry uri https://registry.npmjs.org/semver
+348 verbose addRemoteTarball https://registry.npmjs.org/semver/-/semver-5.1.0.tgz not in flight; adding
+349 verbose addRemoteTarball [ 'https://registry.npmjs.org/semver/-/semver-5.1.0.tgz',
+349 verbose addRemoteTarball   '85f2cf8550465c4df000cf7d86f6b054106ab9e5' ]
+350 info retry fetch attempt 1 at 17:19:04
+351 info attempt registry request try #1 at 17:19:04
+352 http fetch GET https://registry.npmjs.org/semver/-/semver-5.1.0.tgz
+353 http 200 https://registry.npmjs.org/fs-extra
+354 verbose headers { server: 'CouchDB/1.6.1 (Erlang OTP/R16B03)',
+354 verbose headers   etag: '"AJ05KISMIMBYXL90TY7U76OF0"',
+354 verbose headers   'content-type': 'application/json',
+354 verbose headers   'content-encoding': 'gzip',
+354 verbose headers   'cache-control': 'max-age=300',
+354 verbose headers   'content-length': '17946',
+354 verbose headers   'accept-ranges': 'bytes',
+354 verbose headers   date: 'Mon, 15 Aug 2016 09:19:08 GMT',
+354 verbose headers   via: '1.1 varnish',
+354 verbose headers   age: '52',
+354 verbose headers   connection: 'keep-alive',
+354 verbose headers   'x-served-by': 'cache-lcy1129-LCY',
+354 verbose headers   'x-cache': 'HIT',
+354 verbose headers   'x-cache-hits': '2',
+354 verbose headers   'x-timer': 'S1471252748.157700,VS0,VE0',
+354 verbose headers   vary: 'Accept-Encoding' }
+355 silly get cb [ 200,
+355 silly get   { server: 'CouchDB/1.6.1 (Erlang OTP/R16B03)',
+355 silly get     etag: '"AJ05KISMIMBYXL90TY7U76OF0"',
+355 silly get     'content-type': 'application/json',
+355 silly get     'content-encoding': 'gzip',
+355 silly get     'cache-control': 'max-age=300',
+355 silly get     'content-length': '17946',
+355 silly get     'accept-ranges': 'bytes',
+355 silly get     date: 'Mon, 15 Aug 2016 09:19:08 GMT',
+355 silly get     via: '1.1 varnish',
+355 silly get     age: '52',
+355 silly get     connection: 'keep-alive',
+355 silly get     'x-served-by': 'cache-lcy1129-LCY',
+355 silly get     'x-cache': 'HIT',
+355 silly get     'x-cache-hits': '2',
+355 silly get     'x-timer': 'S1471252748.157700,VS0,VE0',
+355 silly get     vary: 'Accept-Encoding' } ]
+356 verbose get saving fs-extra to C:\Users\admin\AppData\Roaming\npm-cache\registry.npmjs.org\fs-extra\.cache.json
+357 http 200 https://registry.npmjs.org/q
+358 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+358 verbose headers   etag: '"1NOW350OR7X8K7LVN3EO9RONS"',
+358 verbose headers   'content-type': 'application/json',
+358 verbose headers   'content-encoding': 'gzip',
+358 verbose headers   'cache-control': 'max-age=300',
+358 verbose headers   'content-length': '23153',
+358 verbose headers   'accept-ranges': 'bytes',
+358 verbose headers   date: 'Mon, 15 Aug 2016 09:19:08 GMT',
+358 verbose headers   via: '1.1 varnish',
+358 verbose headers   age: '247',
+358 verbose headers   connection: 'keep-alive',
+358 verbose headers   'x-served-by': 'cache-lcy1133-LCY',
+358 verbose headers   'x-cache': 'HIT',
+358 verbose headers   'x-cache-hits': '20',
+358 verbose headers   'x-timer': 'S1471252748.173757,VS0,VE0',
+358 verbose headers   vary: 'Accept-Encoding' }
+359 silly get cb [ 200,
+359 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+359 silly get     etag: '"1NOW350OR7X8K7LVN3EO9RONS"',
+359 silly get     'content-type': 'application/json',
+359 silly get     'content-encoding': 'gzip',
+359 silly get     'cache-control': 'max-age=300',
+359 silly get     'content-length': '23153',
+359 silly get     'accept-ranges': 'bytes',
+359 silly get     date: 'Mon, 15 Aug 2016 09:19:08 GMT',
+359 silly get     via: '1.1 varnish',
+359 silly get     age: '247',
+359 silly get     connection: 'keep-alive',
+359 silly get     'x-served-by': 'cache-lcy1133-LCY',
+359 silly get     'x-cache': 'HIT',
+359 silly get     'x-cache-hits': '20',
+359 silly get     'x-timer': 'S1471252748.173757,VS0,VE0',
+359 silly get     vary: 'Accept-Encoding' } ]
+360 verbose get saving q to C:\Users\admin\AppData\Roaming\npm-cache\registry.npmjs.org\q\.cache.json
+361 silly mapToRegistry name fs-extra
+362 silly mapToRegistry using default registry
+363 silly mapToRegistry registry https://registry.npmjs.org/
+364 silly mapToRegistry uri https://registry.npmjs.org/fs-extra
+365 verbose addRemoteTarball https://registry.npmjs.org/fs-extra/-/fs-extra-0.26.5.tgz not in flight; adding
+366 verbose addRemoteTarball [ 'https://registry.npmjs.org/fs-extra/-/fs-extra-0.26.5.tgz',
+366 verbose addRemoteTarball   '53ac74667ca083fd2dc1712c813039ca32d69a7f' ]
+367 info retry fetch attempt 1 at 17:19:04
+368 info attempt registry request try #1 at 17:19:04
+369 http fetch GET https://registry.npmjs.org/fs-extra/-/fs-extra-0.26.5.tgz
+370 silly mapToRegistry name q
+371 silly mapToRegistry using default registry
+372 silly mapToRegistry registry https://registry.npmjs.org/
+373 silly mapToRegistry uri https://registry.npmjs.org/q
+374 verbose addRemoteTarball https://registry.npmjs.org/q/-/q-1.4.1.tgz not in flight; adding
+375 verbose addRemoteTarball [ 'https://registry.npmjs.org/q/-/q-1.4.1.tgz',
+375 verbose addRemoteTarball   '55705bcd93c5f3673530c2c2cbc0c2b3addc286e' ]
+376 http 200 https://registry.npmjs.org/lodash
+377 verbose headers { server: 'CouchDB/1.6.1 (Erlang OTP/R16B03)',
+377 verbose headers   etag: '"V1158IMHZO8F0DS1L4PKN8TV"',
+377 verbose headers   'content-type': 'application/json',
+377 verbose headers   'content-encoding': 'gzip',
+377 verbose headers   'cache-control': 'max-age=300',
+377 verbose headers   'content-length': '18382',
+377 verbose headers   'accept-ranges': 'bytes',
+377 verbose headers   date: 'Mon, 15 Aug 2016 09:19:08 GMT',
+377 verbose headers   via: '1.1 varnish',
+377 verbose headers   age: '38',
+377 verbose headers   connection: 'keep-alive',
+377 verbose headers   'x-served-by': 'cache-lcy1125-LCY',
+377 verbose headers   'x-cache': 'HIT',
+377 verbose headers   'x-cache-hits': '4',
+377 verbose headers   'x-timer': 'S1471252748.213599,VS0,VE0',
+377 verbose headers   vary: 'Accept-Encoding' }
+378 silly get cb [ 200,
+378 silly get   { server: 'CouchDB/1.6.1 (Erlang OTP/R16B03)',
+378 silly get     etag: '"V1158IMHZO8F0DS1L4PKN8TV"',
+378 silly get     'content-type': 'application/json',
+378 silly get     'content-encoding': 'gzip',
+378 silly get     'cache-control': 'max-age=300',
+378 silly get     'content-length': '18382',
+378 silly get     'accept-ranges': 'bytes',
+378 silly get     date: 'Mon, 15 Aug 2016 09:19:08 GMT',
+378 silly get     via: '1.1 varnish',
+378 silly get     age: '38',
+378 silly get     connection: 'keep-alive',
+378 silly get     'x-served-by': 'cache-lcy1125-LCY',
+378 silly get     'x-cache': 'HIT',
+378 silly get     'x-cache-hits': '4',
+378 silly get     'x-timer': 'S1471252748.213599,VS0,VE0',
+378 silly get     vary: 'Accept-Encoding' } ]
+379 verbose get saving lodash to C:\Users\admin\AppData\Roaming\npm-cache\registry.npmjs.org\lodash\.cache.json
+380 info retry fetch attempt 1 at 17:19:04
+381 info attempt registry request try #1 at 17:19:04
+382 http fetch GET https://registry.npmjs.org/q/-/q-1.4.1.tgz
+383 silly mapToRegistry name lodash
+384 silly mapToRegistry using default registry
+385 silly mapToRegistry registry https://registry.npmjs.org/
+386 silly mapToRegistry uri https://registry.npmjs.org/lodash
+387 verbose addRemoteTarball https://registry.npmjs.org/lodash/-/lodash-4.5.1.tgz not in flight; adding
+388 verbose addRemoteTarball [ 'https://registry.npmjs.org/lodash/-/lodash-4.5.1.tgz',
+388 verbose addRemoteTarball   '80e8a074ca5f3893a6b1c10b2a636492d710c316' ]
+389 info retry fetch attempt 1 at 17:19:04
+390 info attempt registry request try #1 at 17:19:04
+391 http fetch GET https://registry.npmjs.org/lodash/-/lodash-4.5.1.tgz
+392 http fetch 200 https://registry.npmjs.org/user-home/-/user-home-2.0.0.tgz
+393 silly fetchAndShaCheck shasum 9c70bfd8169bc1dcbf48604e0f04b8b49cde9e9f
+394 verbose addTmpTarball C:\Users\admin\AppData\Local\Temp\npm-4932-fe88a50c\registry.npmjs.org\user-home\-\user-home-2.0.0.tgz not in flight; adding
+395 verbose addTmpTarball already have metadata; skipping unpack for user-home@2.0.0
+396 silly cache afterAdd user-home@2.0.0
+397 verbose afterAdd C:\Users\admin\AppData\Roaming\npm-cache\user-home\2.0.0\package\package.json not in flight; writing
+398 verbose afterAdd C:\Users\admin\AppData\Roaming\npm-cache\user-home\2.0.0\package\package.json written
+399 http fetch 200 https://registry.npmjs.org/npmi/-/npmi-1.0.1.tgz
+400 silly fetchAndShaCheck shasum 15d769273547545e6809dcf0ce18aed48b0290e2
+401 verbose addTmpTarball C:\Users\admin\AppData\Local\Temp\npm-4932-fe88a50c\registry.npmjs.org\npmi\-\npmi-1.0.1.tgz not in flight; adding
+402 verbose addTmpTarball already have metadata; skipping unpack for npmi@1.0.1
+403 silly cache afterAdd npmi@1.0.1
+404 verbose afterAdd C:\Users\admin\AppData\Roaming\npm-cache\npmi\1.0.1\package\package.json not in flight; writing
+405 verbose afterAdd C:\Users\admin\AppData\Roaming\npm-cache\npmi\1.0.1\package\package.json written
+406 info retry will retry, error on last attempt: Error: read ECONNRESET
+407 http fetch 200 https://registry.npmjs.org/bash-color/-/bash-color-0.0.4.tgz
+408 http fetch 200 https://registry.npmjs.org/tmp/-/tmp-0.0.28.tgz
+409 silly fetchAndShaCheck shasum e9be8ce33540cada4881768c59bd63865736e913
+410 http fetch 200 https://registry.npmjs.org/commander/-/commander-2.9.0.tgz
+411 silly fetchAndShaCheck shasum 172735b7f614ea7af39664fa84cf0de4e515d120
+412 verbose addTmpTarball C:\Users\admin\AppData\Local\Temp\npm-4932-fe88a50c\registry.npmjs.org\bash-color\-\bash-color-0.0.4.tgz not in flight; adding
+413 verbose addTmpTarball already have metadata; skipping unpack for bash-color@0.0.4
+414 verbose addTmpTarball C:\Users\admin\AppData\Local\Temp\npm-4932-fe88a50c\registry.npmjs.org\tmp\-\tmp-0.0.28.tgz not in flight; adding
+415 verbose addTmpTarball already have metadata; skipping unpack for tmp@0.0.28
+416 silly cache afterAdd bash-color@0.0.4
+417 verbose afterAdd C:\Users\admin\AppData\Roaming\npm-cache\bash-color\0.0.4\package\package.json not in flight; writing
+418 silly cache afterAdd tmp@0.0.28
+419 verbose afterAdd C:\Users\admin\AppData\Roaming\npm-cache\tmp\0.0.28\package\package.json not in flight; writing
+420 verbose afterAdd C:\Users\admin\AppData\Roaming\npm-cache\tmp\0.0.28\package\package.json written
+421 verbose afterAdd C:\Users\admin\AppData\Roaming\npm-cache\bash-color\0.0.4\package\package.json written
+422 verbose stack Error: read ECONNRESET
+422 verbose stack     at exports._errnoException (util.js:870:11)
+422 verbose stack     at TLSWrap.onread (net.js:544:26)
+423 verbose cwd E:\wamp\www\uidoc
+424 error Windows_NT 10.0.10586
+425 error argv "D:\\nodejs\\node.exe" "D:\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "-g" "gitbook-cli"
+426 error node v4.2.4
+427 error npm  v2.14.12
+428 error code ECONNRESET
+429 error errno ECONNRESET
+430 error syscall read
+431 error network read ECONNRESET
+431 error network This is most likely not a problem with npm itself
+431 error network and is related to network connectivity.
+431 error network In most cases you are behind a proxy or have bad network settings.
+431 error network
+431 error network If you are behind a proxy, please make sure that the
+431 error network 'proxy' config is set properly.  See: 'npm help config'
+432 verbose exit [ 1, true ]
