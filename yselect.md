@@ -36,18 +36,70 @@ $('#js-select')
 ## Options
 |name|type|required|default|description|
 |:---|:---|:---:|:---||
-|dataSource|object|yes||下拉框数据源的相关信息（url、参数等）|
-|dataSource.url|String/Array|yes||下拉框的数据源url,如果为 ``String`` 则判定为数据源的url，如果为 ``Array`` 则作为数据使用|
+|dataSource|object/Array|yes||如果数据源为对象，则从接口获取数据，如果数据源是数组，则将数据源作为数据使用|
+|dataSource.url|String|yes||下拉框的数据源url|
 |dataSource.params|Object|no|{}|数据源的参数|
+
+```javascript
+/**
+ * 选择框
+ */
+$('#js-select')
+    .yselect({
+        dataSource: [{
+            "value": "1",
+            "alias": "已购买1"
+        }, {
+            "value": "2",
+            "alias": "已租用2"
+        }, {
+            "value": "3",
+            "alias": "未使用3"
+        }]
+    })
+    // 调用方法：设置参数
+    .setParams({
+        id: 111
+    })
+    // 调用方法：更新数据
+    .update();
+
+```
+
+```javascript
+/**
+ * 选择框
+ */
+$('#js-select')
+    .yselect({
+        dataSource:{
+            url:'/apis/carport-status.json',
+            params:{
+                id:'hehe'
+            }
+        }
+    })
+// 调用方法：设置参数
+.setParams({id:111})
+// 调用方法：更新数据
+.update();
+
+```
+
 
 ##Method
 
-###setParams({params:1})
+###setParams(params)
 设置参数，使用对象扩展的方式
+参数
 
-###setDataSource(url)
+|name|type|required|default|description|
+|:---|:---|:---|:---|:---|
+|params|object|false|{}|需要传递的参数json对象格式{key:value}|
+
+###setDataSource(dataSource)
 设置数据源
 
 ###update()
-更新数据
+更新下拉数据
 

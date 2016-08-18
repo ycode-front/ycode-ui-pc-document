@@ -31,8 +31,8 @@
 |name|type|required|default|description|
 |:---:|:---:|:---:|:---:|:---|
 |unit|string|true|day|日期选择的单位day/month/year|
-|startDate|string|false|''|起始日期|
-|endDate|string|false|''|结束日期|
+|startDate|string/object|false|''|起始日期|
+|endDate|string/object|false|''|结束日期|
 
 
 ##Methods
@@ -43,8 +43,11 @@
 ###.setEndRange(date)
 设置结束日期（默认显示值）
 
-###.getData(date)
-赶脚没用
+###.getStartDate(callback)
+获取起始日期值
+
+###.getEndDate(callback)
+获取结束日期值
 
 ###setStartDate(date)
 设置起始日期日期选择框的起始日期
